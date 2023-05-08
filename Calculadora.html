@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Calculadora Simples</title>
+	<script language=JavaScript>
+
+	function soma(){
+	a = document.f1.val1.value;
+	b = document.f1.val2.value;
+	document.f1.val3.value = parseFloat(a) + parseFloat(b);
+	}
+	function sub(){
+	a = document.f2.val1.value;
+	b = document.f2.val2.value;
+	document.f2.val3.value = parseFloat(a) - parseFloat(b);
+	}
+	function vezes(){
+	a = document.f3.val1.value;
+	b = document.f3.val2.value;
+	document.f3.val3.value = parseFloat(a) * parseFloat(b);
+	}
+	function divisao(){
+	a = document.f4.val1.value;
+	b = document.f4.val2.value;
+	document.f4.val3.value = parseFloat(a) / parseFloat(b);
+	}
+	</script>
+	</head>
+		<body>
+			<div id="caixa" align="center" >
+			
+			<i><h1>Calculadora</h1><i>
+			<form name="f1">
+			<input type=text name=val1 size=5 border-radius=10> 
+			<input type=button value=" + ">
+			<input type=text name=val2 size=5>
+			<input type=button value=" = " onclick="soma()">
+			<input type=text name=val3 size=5>
+			</form><br>
+			<form name="f2">
+			<input type=text name=val1 size=5> 
+			<input type=button value=" - ">
+			<input type=text name=val2 size=5>
+			<input type=button value=" = " onclick="sub()">
+			<input type=text name=val3 size=5>
+			</form><br>
+			<form name="f3">
+			<input type=text name=val1 size=5> 
+			<input type=button value=" x ">
+			<input type=text name=val2 size=5>
+			<input type=button value=" = " onclick="vezes()">
+			<input type=text name=val3 size=5>
+			</form><br>
+			<form name="f4">
+			<input type=text name=val1 size=5> 
+			<input type=button value=" / ">
+			<input type=text name=val2 size=5>
+			<input type=button value=" = " onclick="divisao()">
+			<input type=text name=val3 size=5>
+			</form>
+
+			</div>
+			<style type="text/css">
+				body{background:linear-gradient(180deg,rgb(224, 255, 249),rgb(128, 179, 124));}
+				h1{color:white;}
+				h5{color:white;}
+				#caixa{
+				margin: 50px auto;
+				width:450px;	
+				background:linear-gradient(180deg,blue,purple);
+				border: 10px outset #FFFFFF;
+				border-radius: 10px;
+				}
+			</style>
+		</body>
+	</html>
